@@ -1,0 +1,409 @@
+body {
+	font-family: "Poppins", sans-serif;
+	background: white;
+}
+
+body.overflow {
+	overflow: hidden;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.g-recaptcha div {
+	margin: 0 auto 25px;
+}
+
+nav.navbar {
+	height: 100px;
+	background: white;
+	box-shadow: none;
+}
+
+nav.navbar.fixed-top {
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+}
+
+nav.navbar .navbar-brand {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 30px;
+	color: #ef5350;
+}
+
+nav.navbar .nav-link {
+	padding: 15px 20px;
+	background: black;
+	border-radius: 3px;
+	color: white;
+}
+
+nav.navbar .nav-link:hover {
+	color: white;
+	cursor: pointer;
+}
+
+.navigation {
+	height: calc(100vh - 100px);
+	width: 100vw;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: 999;
+	padding: 50px 0 25px;
+	overflow: auto;
+	display: none;
+}
+
+.navigation .item, .store .item {
+	border-radius: 3px;
+	background: #ef5350;
+	padding: 50px 0;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	transition: all 100ms ease-in-out; 
+}
+
+.navigation .item.item-one, .navigation .item.item-two, .navigation .item.item-three, .business input, .business textarea, .team .member {
+	margin-bottom: 25px;
+}
+
+.reviews .review, .general .item, .social .item {
+	border-radius: 3px;
+	background: #ef5350;
+	color: white;
+}
+
+.general .item, .social .item {
+	height: 100px;
+	position: relative;
+	transition: all 100ms ease-in-out;
+}
+
+.general .item .icon, .social .item .icon {
+	font-size: 45px;
+	left: 25px;
+	font-weight: 400;
+}
+
+.general .item .text, .social .item .text {
+	transition: all 100ms ease-in-out;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 10px 25px;
+	right: 0;
+	background: #b61827;
+	border-radius: 3px 0 0 3px;
+}
+
+.general .item:hover, .social .item:hover {
+	background: #b61827;
+}
+
+.general .item:hover .text, .social .item:hover .text {
+	background: #ef5350;
+}
+
+.general .item .text, .general .item .icon, .social .item .text, .social .item .icon {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.reviews .review.review-two {
+	padding: 50px 15px;
+}
+
+.reviews .review.review-one, .reviews .review.review-three {
+	margin: 15px;
+	padding: 35px 15px;
+}
+
+.navigation .item:hover, .store .item:hover {
+	background: #b61827;
+	cursor: pointer;
+}
+
+.splash {
+	height: calc(100vh - 100px);
+	margin-top: 100px;
+	padding-top: calc(50vh - 175px);
+	background: url("../images/background.png") no-repeat center center;
+	background-size: cover;
+}
+
+.splash h1 {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 60px;
+	color: #ef5350;
+}
+
+.splash p {
+	font-style: italic;
+	font-size: 25px;
+}
+
+.footer p {
+	font-size: 15px;
+}
+
+.partners, .store, .footer, .reviews, .business, .youtube, .videos, .mission, .team {
+	margin-top: 150px;
+}
+
+.general, .podium, .social, .description {
+	margin-top: 110px;
+}
+
+.description p {
+	color: #6E6E6E;
+}
+
+.partners h2, .store h2, .team h2, .description h2, .reviews h2, .general h2, .business h2, .podium h2, .social h2, .youtube h2, .videos h2, .mission h2 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+.partners .partner {
+	color: #6E6E6E;
+	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+}
+
+.team .member {
+	height: 400px;
+	position: relative;
+	border-radius: 50px 3px 50px 3px;
+	overflow: hidden;
+	transition: all 500ms ease-in-out;
+}
+
+.team .member.member-one {
+	background: url("../images/member.jpg") no-repeat center center;
+	background-size: 400px;
+}
+
+.team .member.member-one:hover {
+	background-size: 500px;
+}
+
+.team .member.member-two {
+	background: url("../images/member.jpg") no-repeat center center;
+	background-size: 400px;
+}
+
+.team .member.member-two:hover {
+	background-size: 500px;
+}
+
+.team .member.member-three {
+	background: url("../images/member.jpg") no-repeat center center;
+	background-size: 400px;
+}
+
+.team .member.member-three:hover {
+	background-size: 500px;
+}
+
+.team .member.member-four {
+	background: url("../images/member.jpg") no-repeat center center;
+	background-size: 400px;
+}
+
+.team .member.member-four:hover {
+	background-size: 500px;
+}
+
+.team .member .overlay {
+	background: rgba(239, 83, 80, 0.75);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	transition: all 500ms ease-in-out;
+}
+
+.team .member:hover .overlay {
+	background: rgba(239, 83, 80, 0.65);
+}
+
+.team .member .content h3, .reviews .review h3, .youtube .statistics .statistic h3 {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+}
+
+.reviews .review h3 {
+	padding-top: 15px;
+}
+
+.team .member .content p, .reviews .review p, .youtube .statistics .statistic p {
+	font-size: 16px;
+	margin: 0;
+}
+
+.team .member .content {
+	position: absolute;
+	width: 100%;
+	bottom: 50px;
+	color: white;
+}
+
+.business input, .business textarea {
+	border: none;
+	width: 100%;
+	background: #e7e7e7;
+	padding: 20px 25px;
+	border-radius: 3px;
+}
+
+.business button {
+	border-radius: 3px;
+	border: none;
+	font-weight: bold;
+	font-size: 18px;
+	color: white;
+	background: #ef5350;
+	transition: all 100ms ease-in-out;
+	padding: 15px 65px;
+}
+
+.business button:hover {
+	background: #b61827;
+	cursor: pointer;
+}
+
+:focus {
+	outline: none;
+}
+
+.podium .place {
+	width: calc(100% - 30px);
+	background: #ef5350;
+	border-radius: 3px;
+	padding-top: 25px;
+	position: absolute;
+	bottom: 0;
+	transition: all 100ms ease-in-out;
+	left: 15px;
+}
+
+.podium .place-one, .podium .place-two, .podium .place-three {
+	height: 464px;
+}
+
+.podium .place .icon {
+	font-size: 35px;
+	padding: 15px 15px 25px;
+	font-weight: 400;
+	background: #b61827;
+	display: inline-block;
+	border-radius: 3px 3px 0 0;
+	color: white;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	line-height: 35px;
+	transition: all 100ms ease-in-out;
+}
+
+.podium .place:hover {
+	background: #b61827;
+}
+
+.podium .place:hover .icon {
+	background: #ef5350;
+}
+
+.podium .place-one h2, .podium .place-two h2, .podium .place-three h2 {
+	color: white;
+}
+
+.podium h3 {
+	position: absolute;
+	width: calc(100% - 30px);
+	text-align: center;
+	left: 15px;
+	font-size: 18px;
+}
+
+.podium .place-two .place {
+	padding-bottom: 200px;
+}
+
+.podium .place-three .place {
+	padding-bottom: 100px;
+}
+
+.podium .place-one .place {
+	padding-bottom: 300px;
+}
+
+.podium .place-one h3 {
+	bottom: 415px;
+}
+
+.podium .place-two h3 {
+	bottom: 315px;
+}
+
+.podium .place-three h3 {
+	bottom: 215px;
+}
+
+.videos .recent iframe {
+	border: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.videos .recent {
+	border-radius: 3px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+}
+
+@media screen and (max-width: 768px) {
+	.youtube .statistics .statistic:not(.statistic-three), .team .member:not(.member-four), .general .item:not(.item-three), .store .item:not(.item-four), .navigation .item.item-four, .navigation .item.item-five, .partners .partner:not(.partner-three), .social .item:not(.item-three), .videos .recent:not(.recent-three) {
+		margin-bottom: 25px;
+	}
+	
+	.reviews .review.review-one {
+		margin: 0 15px 25px;
+	}
+	
+	.reviews .review.review-three {
+		margin: 25px 15px 0;
+	}
+	
+	.youtube .statistics .statistic {
+		background: #ef5350;
+		color: white;
+		border-radius: 3px;
+		padding: 25px 0;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.youtube .statistics {
+		background: #ef5350;
+		color: white;
+		border-radius: 3px;
+		padding: 25px 0;
+	}
+	
+	.youtube .statistics .statistic:not(.statistic-three) {
+		border-right: 1px solid #b61827;
+	}
+}
